@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: D://CODE//GITHUB//Project//uo-config-service
+          search-paths: ConfigData
+
+        # "native" is used when the native profile is active, for local tests with a classpath repo:
+        native:
+          search-locations: classpath:offline-repository/
+server:
+  port: 9000
+
+#logging:
+#  level: debug
+
