@@ -9,10 +9,23 @@ spring:
         # "native" is used when the native profile is active, for local tests with a classpath repo:
         native:
           search-locations: classpath:offline-repository/
+  application:
+    name: uo-config-service
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
+#  instance:
+#    hostname: localhost
+
 server:
-  port: 9000
+  port: 9010
 
 logging:
   level:
     org.springframework.web: DEBUG
+
 
