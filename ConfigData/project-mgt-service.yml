@@ -7,17 +7,17 @@ spring:
   application:
     name: project-mgt-service
 
-  h2:
-    console:
-      enabled: true
-  jpa:
-    properties:
-      hibernate:
-        generate_statistics: true
-      format_sql: true
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    properties:
+#      hibernate:
+#        generate_statistics: true
+#      format_sql: true
 #     connection:
 #       isolation: 2
-    show-sql: true
+#    show-sql: true
 
 #Eureka configuration
 eureka:
@@ -39,10 +39,10 @@ management:
         include: refresh
 
 
-logging:
-  level:
-    org.springframework.web: DEBUG
-    org.hibernate.type: trace
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.hibernate.type: trace
 
 
 #Application Logging
