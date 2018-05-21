@@ -3,17 +3,17 @@ spring:
   application:
     name: project-mgt-service
 
-#  h2:
-#    console:
-#      enabled: true
-#  jpa:
-#    properties:
-#      hibernate:
-#        generate_statistics: true
-#      format_sql: true
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        format_sql: true
 #     connection:
 #       isolation: 2
-#    show-sql: true
+    show-sql: true
 
 #Server Port
 server:
