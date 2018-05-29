@@ -1,4 +1,4 @@
-package com.fral.uo.config.uoconfigservice;
+package com.umssonline.config;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
