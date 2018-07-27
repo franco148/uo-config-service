@@ -1,0 +1,50 @@
+#Spring Application Name
+spring:
+  application:
+    name: social-service
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        format_sql: true
+#     connection:
+#       isolation: 2
+    show-sql: true
+
+#Server Port
+server:
+  port: 9025
+
+#Eureka configuration
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    healthcheck:
+      enabled: true
+  instance:
+    hostname: localhost
+
+#Spring Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.hibernate.type: trace
+
+
+#Application Logging
+logging:
+  level:
+    org.springframework.web: DEBUG
