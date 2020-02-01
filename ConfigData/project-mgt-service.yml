@@ -2,6 +2,8 @@
 spring:
   application:
     name: project-mgt-service
+  datasource:
+    url: jdbc:h2:file:./data/projectdb
 
   h2:
     console:
