@@ -16,6 +16,8 @@ spring:
 #     connection:
 #       isolation: 2
     show-sql: true
+    hibernate:
+      ddl-auto: update
 
 #Server Port
 server:
