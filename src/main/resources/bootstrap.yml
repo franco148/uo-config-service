@@ -3,7 +3,8 @@ spring:
     config:
       server:
         git:
-          uri: D://CODE//GITHUB//Project//uo-config-service
+          # uri: D://CODE//GITHUB//Project//uo-config-service
+          uri: //home//uoproject//uo-config-service
           search-paths: ConfigData
 
         # "native" is used when the native profile is active, for local tests with a classpath repo:
